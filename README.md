@@ -9,6 +9,8 @@ Repositorio índice: un solo lugar para ver de qué trata cada demo/proyecto de 
 | **balanceador-openshift** | Demo de balanceo de carga entre réplicas de un Service. Dashboard web que muestra en vivo qué pod y nodo atendió cada petición. Despliegue manual con `oc` o fast track con Ansible. | [github.com/trixlan/balanceador-openshift](https://github.com/trixlan/balanceador-openshift) |
 | **AB-openshift** | Traffic splitting con OpenShift Routes (`alternateBackends`, split 90/10 configurable). Incluye dashboard web con la distribución v1/v2 en vivo y despliegue fast track con Ansible. | [github.com/trixlan/AB-OpenShift](https://github.com/trixlan/AB-OpenShift) |
 | **ocp-custom-metrics-keda** | Autoscaling de una aplicación con KEDA a partir de métricas de OpenShift Monitoring (Prometheus/Thanos), usando el Custom Metrics Autoscaler operator. | [github.com/trixlan/OCP-Custom-Metrics-KEDA](https://github.com/trixlan/OCP-Custom-Metrics-KEDA) |
+| **RBAC** | Demo de RBAC en OpenShift: 4 ServiceAccounts con distintos niveles de permisos (`view`, `edit`, `admin`, un `Role` custom) en el mismo namespace, con script que valida con `oc auth can-i` qué puede hacer cada uno. | [github.com/trixlan/RBAC](https://github.com/trixlan/RBAC) |
+| **Tekton** | Pipeline de OpenShift Pipelines (Tekton) que automatiza CI/CD de una app Node.js: clone → build → deploy → verify, con smoke test contra un endpoint `/info` y dashboard en vivo del despliegue. | [github.com/trixlan/Tekton](https://github.com/trixlan/Tekton) |
 
 ## Cómo agregar un proyecto nuevo
 
